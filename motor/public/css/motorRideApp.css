@@ -1,0 +1,329 @@
+.Ride-App-History {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.history_title,
+.history_descr {
+  position: absolute;
+}
+.history_title {
+  top: 20px;
+  left: 20px;
+}
+.history_descr {
+  left: 20px;
+  bottom: 20px;
+}
+.history_title h1 {
+  color: white;
+  font-size: 65px;
+  font-family: "Anton", sans-serif;
+  line-height: 100%;
+  letter-spacing: 2px;
+  font-weight: 98%;
+}
+.history_title h2 {
+  color: white;
+  font-size: 60px;
+  font-family: serif;
+  line-height: 100%;
+}
+.history_descr p {
+  position: relative;
+  font-family: "Questrial";
+  color: white;
+  line-height: 1.2;
+  font-size: 19px;
+  max-width: 400px;
+}
+
+.history__img {
+  width: 100%;
+  z-index: -1;
+  max-height: 1024px;
+  object-fit: cover;
+}
+
+.Ride-App-Moto-List {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 20vh;
+}
+.moto_title h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 2px;
+}
+.moto_title p {
+  margin-top: 10px;
+  font-family: "Questrial";
+  font-size: 13.5px;
+  line-height: 1.1;
+  display: inline-block;
+  text-align: center;
+  max-width: 300px;
+}
+.moto_list_title {
+  text-align: center;
+  justify-content: center;
+}
+.moto_list_content {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding: 10px;
+}
+.moto_list_item {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+.moto_list_picture {
+  width: 100%;
+}
+.moto_list_img {
+  width: 100%;
+}
+.moto_list_name {
+  margin-top: 10px;
+  font-family: "Bebas Neue";
+  font-weight: 900;
+  font-size: 50px;
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  line-height: 100%;
+}
+.Ride-App-Mobi {
+  height: 85vh;
+  min-height: 630px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+.mobi_app_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobi_app_title {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobi_app_descr {
+  font-size: 20px;
+  max-width: 310px;
+}
+.mobi_app_descr p {
+  text-align: center;
+}
+.mobi_app_button {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.store1 {
+  margin-bottom: 5px;
+}
+.mobi_app_right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobi_app_picture {
+  height: 100%;
+}
+.mobi_app_img {
+  height: 100%;
+}
+
+.Ride-App-Download {
+  height: 850px;
+  width: 100vw;
+}
+.Download {
+  justify-content: center;
+  background-image: url("../img/download-bg-xl.jpg");
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.dow-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download_des {
+  text-align: center;
+}
+.download_des h1 {
+  width: 60%;
+  display: inline-block;
+  font-family: "Bebas Neue";
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1;
+  /* font-weight:  100; */
+  /* margin-left: 20%; */
+}
+
+/*button download*/
+.dow_in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobi-ride-app-button {
+  margin-top: 20px;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobi-ride-app-button span {
+  position: relative;
+  color: white;
+  padding: 10px 50px;
+  font-family: "anton";
+  font-weight: 100;
+  font-size: 20px;
+}
+.mobi-ride-app-button:hover {
+  background: white;
+}
+.mobi-ride-app-button:hover span {
+  animation: transformTxtReverse 0.3s ease;
+  color: black;
+}
+.mobi-ride-app-button:not(:hover) span {
+  animation: transformTxt 0.3s ease;
+}
+@media only screen and (max-width: 1500px) {
+  .Ride-App-Mobi {
+    height: 75vh;
+    margin-bottom: 20vh;
+    min-height: 500px;
+  }
+  .moto_list_name {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .download_des h1 {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .download_des h1 {
+    width: 80%;
+    font-size: 60px;
+  }
+  .Ride-App-Mobi {
+    height: 60vh;
+  }
+  .mobi_app_head h1 strong {
+    font-size: 60px;
+  }
+  .history {
+    width: 100%;
+    background-image: url("../img/community-m.png");
+  }
+  .moto_list_content {
+    /* display: none; */
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .moto_list_name {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 791px) {
+  .Container1 {
+    margin: 0px;
+    /* display: none; */
+  }
+
+  .moto_list_item {
+    justify-content: center;
+    text-align: center;
+  }
+  .moto_list_picture {
+    width: 100%;
+  }
+  .moto_list_img {
+    width: 100%;
+  }
+  .moto_list_name {
+    font-size: 30px;
+  }
+  .Download {
+    background-image: url("../img/download-bg-s.jpg");
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobi-ride-app-button {
+    left: 35%;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .Ride-App-Mobi {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobi_app_left,
+  .mobi_app_right {
+    width: 100%;
+  }
+  .history_title h1 {
+    font-size: 38px;
+  }
+  .history_title h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .moto_list_content {
+    /* display: none; */
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .moto-app-container {
+    margin-top: 20vh;
+  }
+  .download_des h1 {
+    width: 85%;
+    font-size: 55px;
+    line-height: 90%;
+  }
+}
