@@ -5,7 +5,9 @@ import { FooterGe } from "./general/footer/footer_test";
 import MvEmail from "./general/mvEmail/mvEmail";
 import MVSpecialPart from "./general/specialPart/mvSpecialPart";
 import { TrendingLayout } from "./general/trending/trending_Layout";
-
+import {StoreHeader} from "./general/component/storeHeader";
+import {StoreNewIn} from "./general/component/storeNewIn";
+import {StoreNew} from "./general/component/storeNew";
 function Index() {
   return (
     <BrowserRouter>
@@ -46,8 +48,12 @@ function Index() {
         <Route path="/brutale-800-rr-scs" component={Brutale800RR_SCS_Body} />
         <Route path="/superveloce-alpine" component={SuperveloceAlpine} />*/}
         </Switch>
-
+        <div className="mv-bg" id="main-bg" style={{width : "100vw"}}>
+                <StoreHeader />
+        </div>
+        <StoreNewIn />
         <TrendingLayout></TrendingLayout>
+        <StoreNew />
         <MVSpecialPart />
         <MvEmail />
         <FooterGe />
