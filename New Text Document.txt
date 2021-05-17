@@ -1,0 +1,11 @@
+react lib
+--:react-router
+ npm install --save react-router-dom
+--:react-helmet
+ npm install --save react-helmet
+--:react-slick
+ npm install react-slick --save
+--:react-reveal
+ npm install react-reveal
+--:react-animate-on-scroll
+ npm install react-animate-on-scroll

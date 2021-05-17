@@ -15,8 +15,12 @@ export class StoreNewIn extends Component {
     render() {
         const settings = {
             dot: true,
+            arrows: false,
             infinity: true,
+            focusOnSelect: true,
             speed: 200,
+            autoplay: true,
+            draggable: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive:[
